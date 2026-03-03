@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-03-03T10:00:00",
+  "total_chapters": 15,
+  "chapters": {
+    "01": { "status": "writing_done", "step": "writing_done", "completed_at": null },
+    "02": { "status": "writing_done", "step": "writing_done", "completed_at": null },
+    "03": { "status": "writing_done", "step": "writing_done", "completed_at": null },
+    "04": { "status": "pending", "step": null, "completed_at": null },
+    "05": { "status": "pending", "step": null, "completed_at": null },
+    "06": { "status": "pending", "step": null, "completed_at": null },
+    "07": { "status": "pending", "step": null, "completed_at": null },
+    "08": { "status": "pending", "step": null, "completed_at": null },
+    "09": { "status": "pending", "step": null, "completed_at": null },
+    "10": { "status": "pending", "step": null, "completed_at": null },
+    "11": { "status": "pending", "step": null, "completed_at": null },
+    "12": { "status": "pending", "step": null, "completed_at": null },
+    "13": { "status": "pending", "step": null, "completed_at": null },
+    "14": { "status": "pending", "step": null, "completed_at": null },
+    "15": { "status": "pending", "step": null, "completed_at": null }
+  }
+}
