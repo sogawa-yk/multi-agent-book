@@ -41,3 +41,14 @@
 - `docs/chapter-specs/ch{NN}-spec.md` - 章仕様書
 - `docs/writing-guidelines.md` - 執筆ガイドライン
 - `docs/glossary.md` - 用語集
+
+## 過去の章からの申し送り
+
+{過去の章のtasklist.md振り返りセクションから抽出した申し送り事項を列挙}
+
+- {申し送り1}（出典: 第{X}章のtasklist.md）
+- {申し送り2}（出典: 第{Y}章のtasklist.md）
+
+**今回の執筆でどう反映するか**:
+- {申し送り1への対応方針}
+- {申し送り2への対応方針}

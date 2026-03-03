@@ -1,4 +1,4 @@
-# AIエージェント開発入門 ― シングルからマルチへ
+# AIエージェント開発入門
 
 OCI Generative AI Serviceで学ぶマルチエージェントの設計と実装
 
@@ -10,27 +10,20 @@ OCI Generative AI Serviceで学ぶマルチエージェントの設計と実装
 
 ### 初回セットアップ
 
-```bash
-claude
-> /setup-book
-```
+    claude
+    > /setup-book
 
-### 章の執筆
+### 全章一括執筆（推奨）
 
-```bash
-> /write-chapter 4
-```
+    > /write-all
 
-### 章のレビュー
+全15章を自動で執筆・レビュー・修正・コミット・プッシュします。
+レートリミット等で中断されても、再実行で続きから再開します。
 
-```bash
-> /review-chapter 4
-```
+### 章の個別操作
 
-### フィードバック修正
+    > /write-chapter 4
+    > /review-chapter 4
+    > /fix-feedback 2026-03-05-ch04-review.md
 
-```bash
-> /fix-feedback 2026-03-05-ch04-review.md
-```
-
-詳細は `CLAUDE.md` を参照してください。
+詳細は CLAUDE.md を参照してください。

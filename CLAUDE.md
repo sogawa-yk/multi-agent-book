@@ -102,14 +102,17 @@ Claude Codeによるスペック駆動開発で書籍を執筆する。
 
 1. `docs/ideas/book-concept.md` を配置
 2. `/setup-book` で永続的ドキュメント作成（book-concept.mdを元に）
-3. `/write-chapter [章番号]` で章の執筆開始
+3. `/write-all` で全章一括執筆（または `/write-chapter [章番号]` で個別執筆）
 
 ### 日常的な使い方
 
 **基本は普通に会話で依頼してください:**
 
 ```bash
-# 章の執筆（定型フローはコマンド）
+# 全章一括執筆（中断再開対応）
+> /write-all
+
+# 章の個別執筆
 > /write-chapter 4
 
 # 章のレビュー
