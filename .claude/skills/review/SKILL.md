@@ -25,10 +25,22 @@ allowed-tools: Read
 - キャプションが付いているか
 - 本文中で図表が参照されているか
 
-### 4. 技術正確性チェック
-- OCI Generative AI Serviceの記述が正確か
-- マルチエージェントパターンの説明が正確か
-- コード例（ある場合）の構文が正しいか
+### 4. 技術正確性チェック（web_search使用）
+
+**このチェックはtech-verifierサブエージェントがweb_searchツールを使って実施する。**
+
+検証対象:
+- OCI Generative AI Serviceの仕様（利用可能モデル、API、リージョン、料金体系、Function Calling対応状況）
+- OCI各サービスの仕様（Resource Manager、OKE、Autonomous Database、Streaming、Queue等）
+- MCP / A2Aプロトコルの仕様と現在のステータス（バージョン、Linux Foundation移管状況等）
+- エージェントフレームワーク（LangChain, CrewAI, AutoGen, LlamaIndex等）の最新情報
+- Terraformプロバイダーの仕様
+- コード例（ある場合）の構文・API呼び出しの正しさ
+
+検証プロセス:
+1. 原稿から技術的な主張を抽出する
+2. 各主張をweb_searchで公式ドキュメント・信頼できるソースと照合する
+3. 不一致・古い情報・確認不能な記述を報告する
 
 ### 5. 文体・表記チェック
 - 常体（である調）で統一されているか
