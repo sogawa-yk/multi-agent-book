@@ -129,7 +129,7 @@
 
 ### OKE (Oracle Container Engine for Kubernetes)
 **定義**: OCI上のマネージドKubernetesサービス。エージェントのホスティングやコンテナ化されたワークロードの実行基盤として活用する。
-**初出**: 第11章
+**初出**: 第9章
 
 ### Resource Manager
 **定義**: OCI上のTerraform実行マネージドサービス。IaC（Infrastructure as Code）によるインフラ構築・管理をOCI上で実行する。
@@ -137,7 +137,7 @@
 
 ### Autonomous Database
 **定義**: OCIのセルフマネージドデータベースサービス。エージェントの知識ベースとして、Vector Search、JSON、SQLの機能を活用する。
-**初出**: 第11章
+**初出**: 第9章
 
 ### Resource Principal / Instance Principal
 **定義**: OCI上のリソース（インスタンス等）に割り当てられる認証方式。エージェントがOCI APIを呼び出す際の認証に使用する。APIキーの管理が不要になる。
