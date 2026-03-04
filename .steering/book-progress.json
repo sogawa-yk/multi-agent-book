@@ -15,7 +15,7 @@
     "11": { "status": "done", "step": "done", "completed_at": "2026-03-04T11:00:00" },
     "12": { "status": "done", "step": "done", "completed_at": "2026-03-04T13:00:00" },
     "13": { "status": "done", "step": "done", "completed_at": "2026-03-04T13:00:00" },
-    "14": { "status": "reviewing", "step": "reviewing", "completed_at": null },
-    "15": { "status": "reviewing", "step": "reviewing", "completed_at": null }
+    "14": { "status": "done", "step": "done", "completed_at": "2026-03-04T15:00:00" },
+    "15": { "status": "done", "step": "done", "completed_at": "2026-03-04T15:00:00" }
   }
 }
