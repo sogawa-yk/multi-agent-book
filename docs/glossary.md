@@ -124,7 +124,7 @@
 ## OCI関連
 
 ### OCI Generative AI Service
-**定義**: Oracle Cloud Infrastructure上で提供される生成AIサービス。Cohere Command R+、Meta Llama等のモデルをAPI経由で利用できる。
+**定義**: Oracle Cloud Infrastructure上で提供される生成AIサービス。Cohere Command A/R+、Meta Llama等のモデルをAPI経由で利用できる。チャット、エンベディング、リランクの三つの主要機能を提供する。
 **初出**: 第8章
 
 ### OKE (Oracle Container Engine for Kubernetes)
