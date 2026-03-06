@@ -57,14 +57,24 @@ manuscript/chNN/figures/      # 図表ソース
 
 ### Mermaid図の記法
 
+**必ず`Skill('figure-design')`の配色ルールに従うこと。**
+
+グレー背景で見やすい配色を使用する。全てのMermaid図にテーマ設定とclassDefを適用する:
+
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#4A90D9', 'primaryTextColor': '#FFFFFF', 'primaryBorderColor': '#2A6CB6', 'lineColor': '#333333', 'textColor': '#1A1A1A', 'background': 'transparent'}}}%%
 graph TB
-    A[コンポーネント] --> B[コンポーネント]
+    A[コンポーネント]:::main --> B[コンポーネント]:::sub
+
+    classDef main fill:#4A90D9,stroke:#2A6CB6,color:#FFFFFF
+    classDef sub fill:#E8913A,stroke:#C47A2F,color:#FFFFFF
+    classDef tool fill:#5BB870,stroke:#3D9A50,color:#FFFFFF
+    classDef user fill:#5C6370,stroke:#3D4450,color:#FFFFFF
 ```
 
 - ノード名は日本語でOK
 - 矢印にはラベルを付ける
-- 色分けは使わない（印刷を考慮）
+- 配色の詳細は `Skill('figure-design')` を参照
 
 ### コード例のルール
 
@@ -97,20 +107,50 @@ response = generative_ai_client.chat(
 
 ### 理解度チェック問題の書き方
 
-章末に配置。形式:
+章末に配置。**必ず以下の共通フォーマットに従うこと。**
 
 ```markdown
 ## 理解度チェック
 
-**Q1**: [問題文]
+### Q1. [問題タイトル]
+
+**種類**: [概念の確認 / 判断問題 / 設計問題]
+
+**難易度**: [基礎 / 応用]
+
+**問題文**:
+[問題文を記述。判断問題・設計問題の場合はシナリオを含める。]
+
+**選択肢**（選択式の場合）:
+- (a) [選択肢]
+- (b) [選択肢]
+- (c) [選択肢]
+- (d) [選択肢]
 
 <details>
-<summary>解答</summary>
+<summary>解答と解説</summary>
 
-[解答と解説]
+**解答**: [解答]
+
+**解説**: [なぜその解答になるか、関連する本文の節への参照を含める。]
+
+**関連する節**: [N.X節]
 
 </details>
+
+---
+
+### Q2. [問題タイトル]
+
+（同じフォーマットで繰り返す）
 ```
+
+**フォーマットのルール**:
+- 問題数: 3〜5問
+- 必ず「種類」「難易度」「問題文」「解答と解説」「関連する節」を含める
+- 種類は3種混在を推奨（概念確認×1-2、判断問題×1-2、設計問題×0-1）
+- 選択式でない問題（記述式・設計問題）は選択肢セクションを省略してよい
+- 解説には必ず関連する節への参照を入れる（読者が復習できるように）
 
 ## セルフチェックリスト
 
@@ -126,3 +166,6 @@ response = generative_ai_client.chat(
 - [ ] 章の導入で前章とのつながりがあるか
 - [ ] 章の結びで次章への橋渡しがあるか
 - [ ] 理解度チェック問題が3〜5問含まれているか
+- [ ] 理解度チェック問題が共通フォーマットに準拠しているか（種類・難易度・解答・解説・関連する節）
+- [ ] 「一般的には〜」等の主張に情報ソース（脚注）が付いているか
+- [ ] Mermaid図にテーマ設定とclassDefの配色が適用されているか
